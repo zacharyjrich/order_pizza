@@ -1,20 +1,24 @@
 body {
-  font-family: sans-serif;
-  background-color: #adebeb;
+  font-family: verdana;
+  background-image: url("../img/pizza.jpg");
+  background-size: cover;
 }
 
 .jumbotron {
-  background-color: #32cdcd;
-  color: white;
+  background-color: transparent;
 }
 
-.header {
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.size_toppings {
+#order_area {
   display: none;
+  background-color: lightblue;
+  border-radius: 25px;
+  padding: 20px;
+  width: 35%;
+  margin: auto;
+}
+
+#total_cost {
+  text-align: center;
 }
 
 #prime {

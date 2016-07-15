@@ -12,13 +12,13 @@
   </head>
   <body>
     <div class="jumbotron">
-      <div class="container header">
+      <div class="container" id="header">
         <h1 class="pull-left" id="prime">Home Slice Pizza</h1>
         <h1 class="pull-right" id="order"><span class="glyphicon glyphicon-circle-arrow-right"></span>Order Here</h1>
       </div>
     </div>
-    <div class="container">
-      <div class="col-sm-offset-5 col-sm-4">
+    <div class="container-fluid" id="order_area">
+      <!-- <div class="col-sm-offset-5 col-sm-4"> -->
         <form class="size_toppings">
           <div id="size">
             <h4>Choose a size:</h4>
@@ -55,7 +55,7 @@
           <button type="submit" class="btn btn-primary btn-lg">Place Order!</button>
 
         </form>
-      </div>
+      <!-- </div> -->
       <div id="total_cost">
       </div>
     </div>

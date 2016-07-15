@@ -12,8 +12,8 @@ Pizza.prototype.cost = function() {
 $(document).ready(function() {
 
   $("#order").click(function() {
-    $(".size_toppings").fadeIn("slow");
-    $("#prime").animate({left: '28%'});
+    $("#order_area").fadeIn("slow");
+    $("#prime").animate({left: '26%'});
     $(this).hide();
   });
 
@@ -28,9 +28,10 @@ $(document).ready(function() {
     var order = new Pizza(sizeInput, toppingsInput);
 
     $("#total_cost").text("");
-    $("#total_cost").append("<h3>" + "Your total cost is $" + order.cost() + "</h3>");
+    $("#total_cost").append("<h2>" + "Your total cost is $" + order.cost() + " bucks and your pizza will be ready for pick-up in 30 minutes! Thanks, from Home Slice Pizza!" + "</h2>");
     $("form.size_toppings").hide();
   });
+
 });
 
 // if(!$("form input[type=file]").val()) {
