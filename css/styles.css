@@ -1,10 +1,28 @@
 body {
-  
+  font-family: sans-serif;
+  background-color: #adebeb;
+}
+
+.jumbotron {
+  background-color: #32cdcd;
+  color: white;
 }
 
 .header {
   margin-top: 20px;
   margin-bottom: 50px;
+}
+
+.size_toppings {
+  display: none;
+}
+
+#prime {
+  position: relative;
+}
+
+#order {
+  cursor: pointer;
 }
 
 .glyphicon {

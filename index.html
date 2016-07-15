@@ -8,51 +8,56 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.0.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Home Slice Pizza</title>
+    <title>Home Slice</title>
   </head>
   <body>
-    <div class="container header">
-      <h1 class="pull-left">Home Slice Pizza</h1>
-      <h1 class="pull-right"><span class="glyphicon glyphicon-circle-arrow-right"></span>Order Here</h1>
+    <div class="jumbotron">
+      <div class="container header">
+        <h1 class="pull-left" id="prime">Home Slice Pizza</h1>
+        <h1 class="pull-right" id="order"><span class="glyphicon glyphicon-circle-arrow-right"></span>Order Here</h1>
+      </div>
     </div>
     <div class="container">
-      <form class="size_toppings">
-        <div id="size">
-          <h4>Choose a size:</h4>
-          <div class="radio">
-            <label><input type="radio" name="size" value="1">Small</label>
+      <div class="col-sm-offset-5 col-sm-4">
+        <form class="size_toppings">
+          <div id="size">
+            <h4>Choose a size:</h4>
+            <div class="radio">
+              <label><input type="radio" name="size" id="size" value="8">Small $8</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="size" id="size" value="10">Medium $10</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="size" id="size" value="12">Large $12</label>
+            </div>
           </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="1">Medium</label>
+          <div id="toppings">
+            <h4>Choose dem toppings: $1 each</h4>
+            <p><i>Note: all pies come with sauce</i></p>
+            <div class="checkbox">
+              <label><input type="checkbox" name="toppings" id="toppings" value="1">Cheese</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="toppings" id="toppings" value="1">Pepperoni</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="toppings" id="toppings" value="1">Olives</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="toppings" id="toppings" value="1">Peppers</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="toppings" id="toppings" value="1">Anchovies</label>
+            </div>
           </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="1">Large</label>
-          </div>
-        </div>
-        <!-- <div class="form-group row"> -->
-        <div id="toppings">
-          <h4>Choose dem toppings:</h4>
-          <p><i>Note: all pies come with sauce</i></p>
-          <div class="checkbox">
-            <label><input type="checkbox" name="cheese" value="1">Cheese</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="pepperoni" value="1">Pepperoni</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="olives" value="1">Olives</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="peppers" value="1">Peppers</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="anchovies" value="1">Anchovies</label>
-          </div>
-        </div>
-        <div id="result_button">
+
           <button type="submit" class="btn btn-primary btn-lg">Place Order!</button>
-        </div>
-      </form>
+
+        </form>
+      </div>
+      <div id="total_cost">
+      </div>
     </div>
   </body>
 </html>
