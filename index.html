@@ -12,52 +12,53 @@
   </head>
   <body>
     <div class="jumbotron">
-      <div class="container" id="header">
-        <h1 class="pull-left" id="prime">Home Slice Pizza</h1>
+      <div class="container">
+        <h1 class="pull-left" id="header">Home Slice Pizza</h1>
         <h1 class="pull-right" id="order"><span class="glyphicon glyphicon-circle-arrow-right"></span>Order Here</h1>
       </div>
     </div>
-    <div class="container-fluid" id="order_area">
-      <!-- <div class="col-sm-offset-5 col-sm-4"> -->
-        <form class="size_toppings">
-          <div id="size">
-            <h4>Choose a size:</h4>
-            <div class="radio">
-              <label><input type="radio" name="size" id="size" value="8">Small $8</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="size" id="size" value="10">Medium $10</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="size" id="size" value="12">Large $12</label>
-            </div>
+    <div class="container" id="order_area">
+      <form class="size_toppings">
+        <div id="size">
+          <h3>Choose a size:</h3>
+          <br>
+          <div class="radio-inline">
+            <label><input type="radio" name="size" value="8">Small $8</label>
           </div>
-          <div id="toppings">
-            <h4>Choose dem toppings: $1 each</h4>
-            <p><i>Note: all pies come with sauce</i></p>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" id="toppings" value="1">Cheese</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" id="toppings" value="1">Pepperoni</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" id="toppings" value="1">Olives</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" id="toppings" value="1">Peppers</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" name="toppings" id="toppings" value="1">Anchovies</label>
-            </div>
+          <div class="radio-inline">
+            <label><input type="radio" name="size" value="10">Medium $10</label>
           </div>
+          <div class="radio-inline">
+            <label><input type="radio" name="size" value="12">Large $12</label>
+          </div>
+        </div>
+        <br>
+        <div id="toppings">
+          <h3>Choose dem toppings:</h3>
+          <p><i>(Note: all pies come with cheese & sauce)</i></p>
+          <br>
+          <div class="checkbox-inline">
+            <label><input type="checkbox" name="toppings" value="2">Pepperoni $2</label>
+          </div>
+          <div class="checkbox-inline">
+            <label><input type="checkbox" name="toppings" value="1">Olives $1</label>
+          </div>
+          <div class="checkbox-inline">
+            <label><input type="checkbox" name="toppings" value="1">Peppers $1</label>
+          </div>
+          <div class="checkbox-inline">
+            <label><input type="checkbox" name="toppings" value="1">Anchovies $1</label>
+          </div>
+        </div>
+        <br><br>
 
-          <button type="submit" class="btn btn-primary btn-lg">Place Order!</button>
+        <button type="submit" class="btn btn-primary btn-lg">Place Your Order!</button>
 
-        </form>
-      <!-- </div> -->
+      </form>
+
       <div id="total_cost">
       </div>
+
     </div>
   </body>
 </html>
