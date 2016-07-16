@@ -30,9 +30,9 @@ No known bugs to this point.
 
 ## Support and contact details
 
-http://zacharyjrich.github.io/ping-pong-project
+http://zacharyjrich.github.io/order_pizza
 
-https://github.com/zacharyjrich/
+https://github.com/zacharyjrich/order_pizza
 
 ## Technologies Used
 
