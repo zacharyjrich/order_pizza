@@ -2,6 +2,7 @@ body {
   font-family: verdana;
   background-image: url("../img/pizza.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .jumbotron {
@@ -13,12 +14,13 @@ body {
   padding-right: 15px;
 }
 
-#order_area {
+#order_area, #total_cost {
   display: none;
   background-color: #b3e6ff;
   border-radius: 25px;
   padding: 20px;
-  width: 45%;
+  width: 50%;
+  height: 50%;
   margin: auto;
 }
 
